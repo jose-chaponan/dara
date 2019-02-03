@@ -1,0 +1,339 @@
+@import _variables
+@import _animations
+body
+  font-family: $fontPrincipal
+
+h2,h3,h4,h5
+  margin: 0
+  padding: 0
+
+@media all and (min-width: 1px)
+  // Colores
+  .greenColor
+    color: $greenColor
+  .greenBackground
+    background-color: $greenColor
+  .whiteColor
+    color: $whiteColor
+  .magentaColor
+    color: $magentaColor
+  .redColor
+    color: $redColor
+  .redBackground
+    background-color: $redColor
+  .blackColor
+    color: $blackColor
+  .skyBackground
+    background-color: $skyColor
+  .yellowBackground
+    background-color: $yellowColor
+  .blueBackground
+    background-color: $blueColor
+
+  
+  .secondFont
+    font-family: $fontSecundaria
+  
+  .bxslider
+    > div
+      height: 60vh
+  .sliderWrapp
+    overflow: hidden
+    position: relative
+    img
+      height: 100%
+      width: auto
+      max-width: inherit
+      animation-name: slider1
+      animation-duration: 10s
+      animation-direction: alternate
+      animation-iteration-count: infinite
+      animation-timing-function: ease-out
+      z-index: 2
+    .caption
+      color: $whiteColor
+      position: absolute
+      z-index: 3
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      h2
+        font-size: 4rem
+        text-align: center
+        width: 100%
+        font-family: $fontSecundaria
+      h3
+        font-family: $fontSecundaria
+        font-size: 2.5rem
+        text-align: center
+        width: 100%
+    
+  .sliderWrapp:first-child
+    img
+      position: relative
+      left: -80%
+
+  .ventajas,
+  .dashboard,
+  .vision,
+  .optmimiza_wrapp
+    margin-top: 5vw
+    > h3
+      font-family: $fontTercera
+      font-style: italic
+      width: 80%
+      text-align: center
+    > h2
+      color: $magentaColor
+      font-family: $fontSecundaria
+      font-size: 3.5rem
+      width: 80%
+      text-align: center
+      
+    .diamont
+      position: relative
+      width: 100%
+      text-align: center
+      margin: 10px 0
+      color: $magentaColor
+      &::before
+        content: '///////////////////////////////////////////////'
+        font-weight: 400
+        position: absolute
+        font-size: 1rem
+        color: $grayColor
+        bottom: 0
+        top: 0
+        left: 0
+        right: 0
+        margin: auto
+        text-align: center
+        z-index: -1
+        letter-spacing: 2px
+      > i
+        border-left: $whiteColor 9px solid
+        border-right: $whiteColor 9px solid
+        font-size: 1.8rem
+  
+  .itemVentaja
+    margin: 10px 0
+    > i
+      font-size: 2.5rem
+      color: $magentaColor
+      margin-bottom: 10px
+    > p
+      font-family: $fontSecundaria
+      font-size: 1.9rem
+  
+  .talk
+    height: 70vh
+    margin: 70px 0 30px
+    position: relative
+    &::before
+      content: ''
+      background-color: rgba($blackColor, .7)
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 0
+    > div
+      position: relative
+      z-index: 1
+    h2
+      font-family: $fontSecundaria
+      font-size: 3.5rem
+      span
+        color: $magentaColor
+  
+  .button
+    background-color: $magentaColor
+    color: $whiteColor
+    padding: 15px 0
+    display: block
+    width: 150px
+    margin: 40px auto 0
+    border: 1px solid $magentaColor
+    text-transform: uppercase
+    &:hover
+      transform: scale(1.1)
+  .dashboard
+    margin-bottom: 40px
+
+  .itemDashboard
+    margin: 40px 0
+    > h2
+      font-size: 1.9rem
+      font-family: $fontSecundaria
+      margin: 0 0 10px
+      padding: 0
+      font-weight: 100
+    > p
+      font-size: 1.3rem
+    
+    > i
+      font-size: 2.2rem
+      margin-top: 10px
+  
+  .fontNormal
+    font-style: normal !important
+  
+  .infoVision
+    margin: 40px 0
+  
+  .message_alert
+    border: 1px solid #ffeccc
+    padding: 20px
+    background-color: #fff4e2
+    i
+      color: $yellowColor
+      font-size: 2rem
+    p
+      color: #9d8967
+  .message_success
+    border: 1px solid #cfebfe
+    padding: 20px
+    background-color: #cfebfe
+    i
+      color: #1bbc9b
+      font-size: 2rem
+    p
+      color: #5e7f96
+  .progressBar
+    .bar
+      box-shadow: 0 1px 2px rgba(0,0,0,.1) inset
+      height: 30px
+      background-color: #f7f7f7
+      border-radius: 30px
+      width: 100%
+      position: relative
+      .porcentaje
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        border-radius: 30px
+        > p
+          margin-left: 10px
+
+  .optmimiza
+    height: auto
+    min-height: 100vh
+    padding: 40px
+    margin-bottom: 40px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      background-color: rgba($blackColor, .8)
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 1
+    .optmimiza_wrapp
+      position: relative
+      z-index: 2
+  
+  .magentaBorder
+    border: 2px solid $magentaColor !important
+  
+  .itemOptimiza
+    margin: 50px 20px 40px
+    .number
+      background-color: #1c1a1b
+      color: $whiteColor
+      width: 100px
+      height: 100px
+      font-size: 4rem
+      border-radius: 50%
+      border: 2px solid $whiteColor
+      margin-bottom: 20px
+      position: relative
+      z-index: 2
+      
+  .optmimiza_wrapp
+    .itemOptimiza:last-child
+      .number
+        &::before,
+        &::after
+          display: none
+
+@media all and (min-width: 500px)
+  .bxslider
+    > div
+      height: 90vh
+  .sliderWrapp:first-child
+    img
+      left: 0
+  .sliderWrapp
+    img
+      height: auto
+      width: 100%
+      max-width: 100%
+  
+@media all and (min-width: 760px)
+  .bxslider
+    > div
+      height: 60vh
+  .sliderWrapp:first-child
+    img
+      left: -50%
+  .sliderWrapp
+    img
+      height: 100%
+      width: auto
+      max-width: inherit
+  
+
+@media all and (min-width: 1024px)
+  .sliderWrapp:first-child
+    img
+      left: 0
+  .sliderWrapp
+    img
+      height: auto
+      width: 100%
+      max-width: 100%
+      
+@media all and (min-width: 1025px)
+  .bxslider
+    > div
+      height: 70vh
+
+    .caption
+      h2
+        font-size: 9rem
+      h3
+        font-size: 5.4rem
+  .talk
+    height: 45vh
+  
+  .optmimiza
+    height: 60vh
+    min-height: 40vh
+  
+  .itemOptimiza
+    .number
+      &::before
+        content: ''
+        width: 125%
+        background-color: $whiteColor
+        height: 2px
+        position: absolute
+        top: 0
+        right: -125%
+        bottom: 0
+        margin: auto 0
+        z-index: 1
+      &::after
+        content: ''
+        width: 15px
+        height: 15px
+        background-color: $whiteColor
+        border-radius: 50%
+        right: -70%
+        position: absolute
