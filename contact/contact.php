@@ -10,8 +10,8 @@
   $registro = date("Y-m-d H:i:s");
   
 
-  $to = 'ivan@navike21.com';
-  // $to = 'a.gallegosdesigner@gmail.com';
+  // $to = 'ivan@navike21.com';
+  $to = 'contactocomercial@adretail.pe';
 
   $subject = 'New contact from web - '.$registro;
 
