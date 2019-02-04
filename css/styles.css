@@ -30,6 +30,31 @@ h2, h3, h4, h5 {
 }
 
 @media all and (min-width: 1px) {
+  header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px 0;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+  }
+  header > div {
+    position: relative;
+  }
+  header > div .logo_activo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .whiteHeader {
+    background-color: #ffffff;
+    border-bottom: 2px solid #eee;
+    padding: 10px 0;
+  }
   .greenColor {
     color: #5bb75b;
   }
@@ -115,13 +140,15 @@ h2, h3, h4, h5 {
   .ventajas,
   .dashboard,
   .vision,
-  .optmimiza_wrapp {
+  .optmimiza_wrapp,
+  .contact {
     margin-top: 5vw;
   }
   .ventajas > h3,
   .dashboard > h3,
   .vision > h3,
-  .optmimiza_wrapp > h3 {
+  .optmimiza_wrapp > h3,
+  .contact > h3 {
     font-family: "Playfair Display", serif;
     font-style: italic;
     width: 80%;
@@ -130,7 +157,8 @@ h2, h3, h4, h5 {
   .ventajas > h2,
   .dashboard > h2,
   .vision > h2,
-  .optmimiza_wrapp > h2 {
+  .optmimiza_wrapp > h2,
+  .contact > h2 {
     color: #dd2f42;
     font-family: "Oswald", sans-serif;
     font-size: 3.5rem;
@@ -140,7 +168,8 @@ h2, h3, h4, h5 {
   .ventajas .diamont,
   .dashboard .diamont,
   .vision .diamont,
-  .optmimiza_wrapp .diamont {
+  .optmimiza_wrapp .diamont,
+  .contact .diamont {
     position: relative;
     width: 100%;
     text-align: center;
@@ -150,7 +179,8 @@ h2, h3, h4, h5 {
   .ventajas .diamont::before,
   .dashboard .diamont::before,
   .vision .diamont::before,
-  .optmimiza_wrapp .diamont::before {
+  .optmimiza_wrapp .diamont::before,
+  .contact .diamont::before {
     content: '///////////////////////////////////////////////';
     font-weight: 400;
     position: absolute;
@@ -168,7 +198,8 @@ h2, h3, h4, h5 {
   .ventajas .diamont > i,
   .dashboard .diamont > i,
   .vision .diamont > i,
-  .optmimiza_wrapp .diamont > i {
+  .optmimiza_wrapp .diamont > i,
+  .contact .diamont > i {
     border-left: #ffffff 9px solid;
     border-right: #ffffff 9px solid;
     font-size: 1.8rem;
@@ -335,6 +366,63 @@ h2, h3, h4, h5 {
   }
   .optmimiza_wrapp .itemOptimiza:last-child .number::before, .optmimiza_wrapp .itemOptimiza:last-child .number::after {
     display: none;
+  }
+  .contact form {
+    margin-top: 10px;
+  }
+  .contact form i {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 4px 0px 0px 4px;
+    font-size: 1.3rem;
+    height: 31px;
+    color: #555;
+    min-width: 30px;
+    margin-right: -1px;
+  }
+  .contact form input,
+  .contact form textarea {
+    padding: 5px;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    height: 33px;
+    display: block;
+    font-size: 1.4rem;
+  }
+  .contact form textarea {
+    height: 202px;
+  }
+  .contact form .textarea {
+    height: 200px;
+  }
+  .contact form .submit {
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  footer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  .upArrow {
+    position: fixed;
+    right: 5px;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 45px;
+    height: 45px;
+    color: #ffffff;
+    font-size: 2rem;
+    opacity: 0;
+    z-index: 99;
+  }
+  .activeUp {
+    opacity: 1 !important;
   }
 }
 
