@@ -14,6 +14,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="plugins/parallax.js-1.5.0/parallax.min.js"></script>
     <script src="js/ready.js"></script>
     
@@ -279,7 +280,7 @@
       <span class="diamont">
         <i class="far fa-gem"></i>
       </span>
-      <form action="" class="section_middle_center w_50_desktop w_80 contact">
+      <form action="" class="section_middle_center w_50_desktop w_80 contact form" id="formulario" data-nombre="formulario" data-destino="contact/contact.php" action="index.html" method="post">
         <div class="w_100 section_middle_justify">
           <label for="nombre" class="w_100 w_20_desktop marginBottom_small">Nombre <span>*</span></label>
           <div class="section_middle_left w_100 w_80_desktop marginBottom_small">
@@ -317,6 +318,8 @@
         </div>
         <input type="submit" value="Enviar Mensaje" class="w_100 align_center button submit">
       </form>
+      <input id="success_frm" type="hidden">
+      <div class="loading section_middle_center"></div>
     </section>
     <footer class="w_100 section_middle_center">
       <div class="w_90 w_98_desktop align_center">
