@@ -2,8 +2,9 @@
   //include_once("../gestion-datos/data/conexion.php");
 
   $nombre  = $_POST["nombre"];
-  $correo  = $_POST["correo"];
+  $correo  = $_POST["email"];
   $asunto  = $_POST["asunto"];
+  $telefono = $_POST['phone'];
   $mensaje = $_POST["mensaje"];
   
   $registro = date("Y-m-d H:i:s");
@@ -36,13 +37,13 @@
         </tr>
         <tr>
           <td style="background-color:#ffffff">
-            &nbsp;&nbsp;&nbsp;<img style="margin: 15px;" src="http://ponteflaca.pe/wppnteflaca/wp-content/uploads/2019/01/logo.png" alt="Logo" width="150">
+            &nbsp;&nbsp;&nbsp;<img style="margin: 15px;" src="http://representaciones.adretail.pe/dara/images/logodaralight.png" alt="Logo" width="110">
           </td>
         </tr>
         <tr><td heigh="10" >&nbsp;</td></tr>
         <tr>
           <td align="center">
-            <h2 style="padding: 10px 0px; color:black;">New contact</h2>
+            <h2 style="padding: 10px 0px; color:black;">Nuevo contacto</h2>
           </td>
         </tr>
         <tr><td heigh="10" >&nbsp;</td></tr>
@@ -50,6 +51,7 @@
           <td>
             <p style="margin: 5px 30px; font-weight: 700; olor:black;">'.$nombre.'</p>
             <p style="margin: 5px 30px 10px; font-size: 14px; olor:black;">Email:&nbsp; '.$correo.'</p>
+            <p style="margin: 5px 30px 10px; font-size: 14px; olor:black;">Teléfono:&nbsp; '.$telefono.'</p>
             <p style="margin: 5px 30px 10px; font-size: 14px; olor:black;">Asunto: '.$asunto.'</p>
 
             <p style="margin: 5px 30px; font-size: 14px;">
