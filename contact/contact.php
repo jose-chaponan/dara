@@ -15,7 +15,7 @@
 
   $subject = 'New contact from web - '.$registro;
 
-  $headers = "From: Ponteflaca <".strip_tags("hola@ponteflaca.pe").">\r\n";
+  $headers = "From: Ad Retail <".strip_tags("contactocomercial@adretail.pe").">\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
